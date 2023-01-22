@@ -178,11 +178,11 @@ void FindSearch(
 		if (pos != 0)
 		{
 			{
-				InfoSearchStroka iS;
+				InfoTransaction iS;
 				iS.pos = pos;
 				iS.line = line;  _std.stroki[k];
 				iS.num = k + 1 + _std.nn * numStrokiKvant;
-				safe_ResultSearch.insert(std::map<int, InfoSearchStroka>::value_type(iS.num, iS));
+				safe_ResultSearch.insert(std::map<int, InfoTransaction>::value_type(iS.num, iS));
 				std::cerr << "FIND!!! [" << iS.num<< "|"<<line << "] -----------  number stroka.\n";
 				//cout << " [pos:" << iS.pos << "][num:"<< iS.num <<"]" << endl;
 

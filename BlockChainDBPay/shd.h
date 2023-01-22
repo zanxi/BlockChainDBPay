@@ -3,6 +3,7 @@
 #include "thr_safe.h"
 #include "tsmap.h"
 #include "libh.h"
+#include "Block.h"
 
 // колличетво строк для хранения
 const int numStrokiKvant = 128 * 8;
@@ -14,17 +15,18 @@ const std::chrono::milliseconds sleepTimer = 500ms;
 const std::chrono::milliseconds sleepTimerMain = 750ms;
 
 // класс хранения результатов поиска в строке 
-class InfoSearchStroka
+class InfoTransaction
 {
 public:
+    Block* hackBlock;
     int pos; // позиция в строке
     int num; // номер строки
     string line; // строка 
 };
 
 // тип потокобезопасной карты для хранения всех найденных строк
-//typedef contfree_safe_ptr<std::map<int, InfoSearchStroka>> map_InfoSearchStroki;
-typedef tsmap<int, InfoSearchStroka> map_InfoSearchStroki;
+//typedef contfree_safe_ptr<std::map<int, InfoTransaction>> map_InfoSearchStroki;
+typedef tsmap<int, InfoTransaction> map_InfoSearchStroki;
 
 
 // блок строк  для обработки воркерами

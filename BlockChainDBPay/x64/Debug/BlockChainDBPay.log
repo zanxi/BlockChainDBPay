@@ -1,5 +1,3 @@
-﻿  ExampleTest.cpp
-  main_pay_coin.cpp
+﻿  main_pay_coin.cpp
 C:\_2023__\_Src_inet__\BlockChainDBPay\BlockChainDBPay\ReadingFile.h(8,9): warning C4101: pos: неиспользованная локальная переменная
-  Создание кода...
   BlockChainDBPay.vcxproj -> C:\_2023__\_Src_inet__\BlockChainDBPay\x64\Debug\BlockChainDBPay.exe

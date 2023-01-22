@@ -16,7 +16,7 @@ int Col(std::string& subject, const std::string& mask);
 bool match(const std::string& subject, const std::string& mask);
 
 
-void FindSearch(
+void FindSearch(	
 	string mask,
 	SearchTextData _std,
 	map_InfoSearchStroki& safe_ResultSearch);
