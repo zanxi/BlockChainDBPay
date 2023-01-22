@@ -1,0 +1,6 @@
+file: test5.txt | mask: aB
+
+1
+
+ 26 153 aB
+
